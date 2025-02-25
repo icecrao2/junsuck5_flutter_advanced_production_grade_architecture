@@ -4,7 +4,9 @@ import 'package:flutter_recipe_app_course/core/presentation/components/medium_bu
 import '../../ui/text_styles.dart';
 
 class SplashScreen extends StatelessWidget {
-  const SplashScreen({super.key});
+  final VoidCallback onTapStartCooking;
+
+  const SplashScreen({super.key, required this.onTapStartCooking});
 
   @override
   Widget build(BuildContext context) {
@@ -60,9 +62,7 @@ class SplashScreen extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(horizontal: 66),
                   child: MediumButton(
                     'Start Cooking',
-                    onPressed: () {
-
-                    }
+                    onPressed: onTapStartCooking
                   ),
                 ),
                 const SizedBox(height: 50,)

@@ -15,12 +15,12 @@ class RecipeCard extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 10),
       child: Stack(
         children: [
-          AspectRatio( // TODO: 비율 유지 위젯
+          AspectRatio(
             aspectRatio: 315 / 150,
             child: Container(
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  image: DecorationImage( // TODO: Container의 배경 이미지로 설정하는 방법
+                  image: DecorationImage(
                       image: NetworkImage(recipe.image),
                       fit: BoxFit.cover
                   )
