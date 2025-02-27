@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_recipe_app_course/core/routing/router.dart';
-import 'package:flutter_recipe_app_course/presentation/saved_recipes/saved_recipes_screen.dart';
+import 'package:flutter_recipe_app_course/presentation/saved_recipes/screen/saved_recipes_screen.dart';
 
 void main() {
   runApp(const MyApp());
